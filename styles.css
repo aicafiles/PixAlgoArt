@@ -93,13 +93,24 @@ h1 {
     gap: 10px;
 }
 
+.color-picker-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2px;
+    display: inline-block;
+    overflow: hidden; 
+}
+
 #colorPicker {
     border: none;
-    border-radius: 4px;
-    padding: 8px;
-    width: 100px;
+    border-radius: 8px; 
+    padding: 10px; 
+    width: 100px; 
+    height: 40px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
+
 
 .button-section {
     display: flex;
@@ -123,6 +134,7 @@ button {
     border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     transition: background-color 0.3s, transform 0.2s;
 }
@@ -210,3 +222,23 @@ td:hover {
 td.obstacle {
     background-color: #000;
 }
+
+#saveBtn {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-top: 10px; 
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#saveBtn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+

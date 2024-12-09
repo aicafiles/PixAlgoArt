@@ -391,7 +391,6 @@ function visualizeFlow(start, end, pathColor) {
 
     }, 50);
 
-
 function saveCanvasAsImage() {
     const tempCanvas = document.createElement("canvas");
     const context = tempCanvas.getContext("2d");
