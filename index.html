@@ -25,26 +25,29 @@
             
             <div class="color-picker-section">
                 <h2>Pick A Color</h2>
-                <input type="color" id="colorPicker" value="#ff0000">
-            </div>
+                <div class="color-picker-container">
+                    <input type="color" id="colorPicker" value="#ff0000">
+                </div>
+            </div>            
         </div>
 
         <div class="button-section">
             <h2>Actions</h2>
             <div class="button-grid">
-                <button id="obstacleBtn">Toggle Obstacles</button>
                 <button id="visualizeFlowBtn">Visualize Flow</button>
                 <button id="findPathBtn">Find Path</button>
-                <button id="undoBtn">Undo Path</button>
+                <button id="obstacleBtn">Toggle Obstacles</button>
                 <button id="undoFlowBtn">Undo Flow</button>
+                <button id="undoBtn">Undo Path</button>
                 <button id="resetBtn">Reset Grid</button>
             </div>
-        </div>
+        </div>        
 
         <h2>Design Canvas</h2>
         <table id="pixelCanvas"></table>
-    </div>
+        <button id="saveBtn">Save as PNG</button>        
 
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
