@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixAlgoArt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>PixAlgoArt</h1>
+
+    <div class="container">
+        <div class="top-controls">
+            <div class="grid-controls">
+                <h2>Choose Grid Size</h2>
+                <form id="sizePicker">
+                    <label for="inputHeight">Grid Height:</label>
+                    <input type="number" id="inputHeight" name="height" min="1" value="10">
+                    <label for="inputWidth">Grid Width:</label>
+                    <input type="number" id="inputWidth" name="width" min="1" value="25">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            
+            <div class="color-picker-section">
+                <h2>Pick A Color</h2>
+                <div class="color-picker-container">
+                    <input type="color" id="colorPicker" value="#ff0000">
+                </div>
+            </div>            
+        </div>
+
+        <div class="button-section">
+            
+            <h2>Actions</h2>
+            <div class="button-grid">
+                <button id="visualizeFlowBtn">Visualize Flow</button>
+                <button id="findPathBtn">Find Path</button>
+                <button id="obstacleBtn">Toggle Obstacles</button>
+                <button id="undoFlowBtn">Undo Flow</button>
+                <button id="undoBtn">Undo Path</button>
+                <button id="resetBtn">Reset Grid</button>
+            </div>
+        </div>        
+
+        <h2>Design Canvas</h2>
+        <table id="pixelCanvas"></table>
+        <button id="saveBtn">Save as PNG</button>        
+
+        <div class="info-section">
+            <h2 class="section-title">Learn More About Dijkstra's Algorithm</h2>
+            <div class="content-container">
+                <div class="left-section">
+                    <p class="intro-text">
+                        Dijkstra’s Algorithm finds the shortest path between two nodes in a graph, useful for applications like road networks or computer routing. It starts by assigning tentative distances to all nodes, setting the source node to 0 and others to infinity. The algorithm then selects the node with the smallest distance, updates its neighbors' distances if a shorter path is found, and repeats until all nodes are visited or the destination is reached.
+                    </p>
+                    <p class="intro-text">
+                        The algorithm guarantees the shortest path with non-negative edge weights and works by expanding known paths and updating distances. The basic version runs in \(O(V^2)\) time but can be optimized to \(O((V + E) \log V)\) with a priority queue, making it efficient for large graphs. It doesn’t work with negative edge weights.
+                    </p>                    
+                </div>
+                <div class="right-section">
+                    <div class="algorithm-steps">
+                        <p>It works by:</p>
+                        <ol class="steps-list">
+                            <li>Initializing distances and visiting nodes.</li>
+                            <li>Updating distances to neighbors.</li>
+                            <li>Tracing back from the destination to find the shortest path.</li>
+                        </ol>
+                    </div>
+                    <div class="applications">
+                        <p>Applications include:</p>
+                        <ul class="applications-list">
+                            <li>Finding optimal routes in navigation systems.</li>
+                            <li>Pathfinding in games.</li>
+                            <li>Routing protocols in computer networks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="video-title">Learn More:</h3>
+            <div class="video-container">
+                <iframe 
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/EFg3u_E6eHU?si=NqCV8bbEoB9WxMAh" 
+                  title="Dijkstra's Algorithm Explained" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+             
+    <script src="script.js"></script>
+</body>
+</html>
