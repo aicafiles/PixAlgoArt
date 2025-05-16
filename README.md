@@ -1,62 +1,52 @@
-# PixAlgoArt 🎨🖌️
+# PixAlgoArt
 
-Welcome to **PixAlgoArt** – a pixel art creation tool that visualizes algorithms, designed to enhance your artistic experience while learning how algorithms work.
+## About
+PixAlgoArt is an interactive tool that allows users to create pixel art while simultaneously visualizing algorithms such as Dijkstra’s Algorithm. Designed for both educational and creative purposes, it bridges the gap between artistic design and computer science concepts, making learning visual and intuitive.
 
----
+## Features
 
-## Table of Contents 📚
+- **Custom Grid Dimensions**: Define your preferred grid height and width for a tailored canvas.
+- **Color Selection Tool**: Choose from a palette to fill individual grid cells.
+- **Real-Time Algorithm Visualization**: Observe how algorithms like Dijkstra’s operate step-by-step.
+- **Obstacle Management**: Add or remove obstacles to see how they impact pathfinding results.
+- **Undo and Reset**: Easily revert actions or clear the grid to start over.
+- **Export as PNG**: Save your pixel art creations as downloadable PNG files.
 
-1. [About](#about)
-2. [Features](#features)
-3. [How to Use](#how-to-use)
-4. [Technologies Used](#technologies-used)
-5. [Video Explanation](#Video-Explanation)
+## Tech Stack
+- **HTML5**: Page structure and content layout.
+- **CSS3**: Styling and responsive design.
+- **JavaScript**: Dynamic interactions and logic handling.
+- **Dijkstra’s Algorithm**: Core logic for pathfinding and algorithm visualization.
 
----
+## Getting Started
+1. Clone or download this repository
+2. Navigate to the project directory
+3. Open `index.html` in your browser
 
-## About 🤖
+## Usage Notes
 
-PixAlgoArt is an interactive platform that combines **pixel art creation** with the ability to visualize algorithms, like Dijkstra's, in real-time. Whether you're designing art or studying algorithmic concepts, PixAlgoArt provides a seamless experience to engage and learn.
+1. **Configure the Grid**  
+   Set your desired grid height and width using the input form to customize the canvas.
 
----
+2. **Choose a Color**  
+   Use the color picker to select a fill color for your pixel cells.
 
-## Features 🎨
+3. **Create and Interact**  
+   Click on the grid cells to draw. Use the available controls to enhance your experience:
+   - **Visualize Flow** – Animate the algorithm as it explores the grid.
+   - **Find Path** – Highlight the shortest path using Dijkstra’s Algorithm.
+   - **Toggle Obstacles** – Add or remove barriers to test pathfinding behavior.
+   - **Undo** – Revert your most recent action.
+   - **Reset** – Clear the entire grid for a fresh start.
 
-- **Dynamic Grid Size**: Choose custom grid dimensions for your pixel art.
-- **Color Picker**: Select your desired color from a color palette.
-- **Algorithm Visualization**: Visualize algorithms such as Dijkstra’s algorithm and their paths.
-- **Pathfinding**: Easily toggle obstacles and visualize paths on the grid.
-- **Undo/Reset**: Undo actions and reset the grid for a fresh start.
-- **Save Art**: Save your creations as PNG files for future use.
+## Project Structure
+- `index.html` – Main HTML structure and UI
+- `styles.css` – App styling and layout
+- `script.js` – All interactive logic and algorithm visualization
 
----
+## Video Demonstration
 
-## How to Use 🛠️
-
-1. **Select Grid Size**: Use the form to set the grid height and width.
-2. **Choose Color**: Pick a color from the color picker to fill your pixels.
-3. **Actions**:
-   - **Visualize Flow**: See how flow is calculated in real-time.
-   - **Find Path**: Find the shortest path using Dijkstra’s algorithm.
-   - **Toggle Obstacles**: Add or remove obstacles to test pathfinding.
-   - **Undo Actions**: Undo the last change you made.
-   - **Reset Grid**: Clear the grid and start fresh.
-4. **Design Canvas**: Draw on the grid by clicking on the cells.
-5. **Save Art**: Download your creation as a PNG file by clicking "Save as PNG."
-
----
-
-## Technologies Used 🖥️
-
-- **HTML5**: Structuring the web content.
-- **CSS3**: Styling for a clean and modern UI.
-- **JavaScript**: Functionality for dynamic grid generation and algorithm visualization.
-- **Dijkstra's Algorithm**: For pathfinding and flow visualization.
-
----
-
-## Video Explanation 🎥
-
-Watch the full explnation about how Dijksra's Algorithm Works:
+Watch a comprehensive explanation of how Dijkstra’s Algorithm works:
 
 [![Learn More About Dijkstra's Algorithm](https://img.youtube.com/vi/EFg3u_E6eHU/0.jpg)](https://www.youtube.com/watch?v=EFg3u_E6eHU)
+
